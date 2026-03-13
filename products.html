@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collections | TileCraft Premium Products</title>
+    <meta name="description" content="Browse our extensive collection of premium tiles, sanitaryware, and bathroom hardware. Filter by category and brand.">
+    
+    <!-- Optimized Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        
+        .products-section {
+            display: flex;
+            gap: 3rem;
+            padding: var(--space-xl) 0;
+        }
+
+        .filter-sidebar {
+            width: 300px;
+            flex-shrink: 0;
+        }
+
+        .product-listing {
+            flex-grow: 1;
+        }
+
+        .filter-group {
+            margin-bottom: 2rem;
+        }
+
+        .filter-group h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .filter-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .filter-list a {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .filter-list a:hover, .filter-list a.active {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        @media (max-width: 992px) {
+            .products-section {
+                flex-direction: column;
+            }
+            .filter-sidebar {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+            .filter-group {
+                margin-bottom: 0;
+                min-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header sticky">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-bold">TILE</span>CRAFT
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+91XXXXXXXXXX" class="phone-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>Enquire Now</span>
+                </a>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header page-header-black">
+            <div class="container">
+                <h1>Our Collections</h1>
+                <p>Browse through our premium range of tiles and hardware</p>
+            </div>
+        </section>
+
+        <section class="container products-section">
+            <aside class="filter-sidebar">
+                <div class="filter-group">
+                    <h4>Categories</h4>
+                    <ul class="filter-list">
+                        <li><a href="#" class="active">All Products</a></li>
+                        <li><a href="#">Floor Tiles</a></li>
+                        <li><a href="#">Wall Tiles</a></li>
+                        <li><a href="#">Sanitaryware</a></li>
+                        <li><a href="#">Faucets & Taps</a></li>
+                        <li><a href="#">Shower Systems</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Brands</h4>
+                    <ul class="filter-list">
+                        <li><a href="#">Kajaria</a></li>
+                        <li><a href="#">Jaquar</a></li>
+                        <li><a href="#">Somany</a></li>
+                        <li><a href="#">Cera</a></li>
+                        <li><a href="#">Kohler</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="product-listing">
+                <div class="product-grid">
+                    <!-- Products will be listed here -->
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="assets/categories/floor_tiles.png" alt="Royal Marble Floor Tile">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-brand">Kajaria</span>
+                            <h3>Royal Marble Glossy</h3>
+                            <p class="product-meta">Size: 600x1200mm | Glossy Finish</p>
+                            <button class="btn btn-outline w-100">Request Quote</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="assets/categories/floor_tiles.png" alt="Antique Wood Tile">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-brand">Somany</span>
+                            <h3>Antique Wood Texture</h3>
+                            <p class="product-meta">Size: 200x1200mm | Matte Finish</p>
+                            <button class="btn btn-outline w-100">Request Quote</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="assets/categories/faucets.png" alt="Brushed Gold Basin Mixer">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-brand">Jaquar</span>
+                            <h3>Brushed Gold Mixer</h3>
+                            <p class="product-meta">Material: Solid Brass | PVD Finish</p>
+                            <button class="btn btn-outline w-100">Request Quote</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="assets/categories/sanitaryware.png" alt="Smart Wall-Hung WC">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-brand">Cera</span>
+                            <h3>Elegance Wall-Hung WC</h3>
+                            <p class="product-meta">Rimless | Soft Close Seat</p>
+                            <button class="btn btn-outline w-100">Request Quote</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="assets/categories/shower_system.png" alt="Thermostatic Rainfall Shower">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-brand">Kohler</span>
+                            <h3>Rain-Air Shower System</h3>
+                            <p class="product-meta">Multi-flow | Anti-clog Nozzles</p>
+                            <button class="btn btn-outline w-100">Request Quote</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="assets/categories/wall_tiles.png" alt="Geometric Wall Tile">
+                        </div>
+                        <div class="product-content">
+                            <span class="product-brand">Nitco</span>
+                            <h3>Geometric Pearl White</h3>
+                            <p class="product-meta">Size: 300x600mm | 3D Texture</p>
+                            <button class="btn btn-outline w-100">Request Quote</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-bold">TILE</span>CRAFT
+                </a>
+                <p>Leading provider of premium tiles and bathroom hardware solutions since 2010.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p>123 Showroom Street, Ceramic Plaza<br>New Delhi, India, 110001</p>
+                <p>Ph: +91 XXXXX XXXXX</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 TileCraft. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Filter FAB -->
+    <button class="filter-fab" id="filterFAB">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+    </button>
+
+    <!-- Mobile Action Bar -->
+    <div class="mobile-bar">
+        <a href="index.html" class="mobile-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Home</span>
+        </a>
+        <a href="products.html" class="mobile-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Catalog</span>
+        </a>
+        <a href="tel:+91XXXXXXXXXX" class="mobile-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Call</span>
+        </a>
+        <button class="mobile-item" id="mobileMenuBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <span>Menu</span>
+        </button>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <div class="nav-overlay"></div>
+</body>
+</html>

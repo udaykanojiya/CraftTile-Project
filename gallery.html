@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiration Gallery | TileCraft Designs</title>
+    
+    <!-- Optimized Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .gallery-container {
+            padding: var(--space-xl) 0;
+            columns: 3 300px;
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-caption {
+            color: white;
+            font-weight: 600;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-bold">TILE</span>CRAFT
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+91XXXXXXXXXX" class="phone-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>Enquire Now</span>
+                </a>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header page-header-skin">
+            <div class="container">
+                <h1 class="section-title">Design Inspiration</h1>
+                <p>Beautiful installations from our happy customers and showroom.</p>
+            </div>
+        </section>
+
+        <div class="container gallery-container">
+            <div class="gallery-item">
+                <img src="assets/hero_showroom.png" alt="Modern Living Room">
+                <div class="gallery-overlay"><span class="gallery-caption">Luxury Living</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/categories/floor_tiles.png" alt="Marble Floor">
+                <div class="gallery-overlay"><span class="gallery-caption">Italian Marble Feel</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/categories/faucets.png" alt="Gold Hardware">
+                <div class="gallery-overlay"><span class="gallery-caption">Matte Finish Faucets</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/categories/sanitaryware.png" alt="Modern Bathroom">
+                <div class="gallery-overlay"><span class="gallery-caption">Minimalist Sanitaryware</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/categories/shower_system.png" alt="Shower Setup">
+                <div class="gallery-overlay"><span class="gallery-caption">Rain Shower Bliss</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/hero_showroom.png" alt="Kitchen Backsplash">
+                <div class="gallery-overlay"><span class="gallery-caption">Stunning Kitchens</span></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Action Bar -->
+    <div class="mobile-bar">
+        <a href="index.html" class="mobile-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Home</span>
+        </a>
+        <a href="products.html" class="mobile-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Catalog</span>
+        </a>
+        <a href="tel:+91XXXXXXXXXX" class="mobile-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Call</span>
+        </a>
+        <button class="mobile-item" id="mobileMenuBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <span>Menu</span>
+        </button>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <div class="nav-overlay"></div>
+</body>
+</html>
