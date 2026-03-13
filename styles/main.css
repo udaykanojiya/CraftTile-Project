@@ -822,6 +822,10 @@ img {
         z-index: 1001; /* Stay above nav */
     }
 
+    .phone-link {
+        display: none !important;
+    }
+
     .mobile-toggle.active span {
         background-color: var(--text-primary);
     }
@@ -847,15 +851,6 @@ img {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
 
-    .showroom-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    
-    .showroom-item {
-        height: 300px;
-    }
-
     .cta-btns {
         flex-direction: column;
         width: 100%;
@@ -865,9 +860,68 @@ img {
         width: 100%;
     }
 
+    /* Grid Overhaul for Mobile Stacking */
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .category-card {
+        height: 300px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Hero Section Mobile Polish */
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+    }
+
     /* Padding adjustments */
     .section-padding {
         padding: var(--space-lg) 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -976,5 +1030,6 @@ img {
 
     .filter-sidebar.active {
         bottom: 0;
+        display: block !important;
     }
 }
